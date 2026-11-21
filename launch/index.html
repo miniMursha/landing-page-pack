@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightjar: your site, checked while you sleep</title>
+<meta name="description" content="Nightjar clicks every page and form on your site each night, then sends one short note with only what broke.">
+<meta name="theme-color" content="#1b1e2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500;600&amp;family=Wix+Madefor+Text:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/fog-valley-1920.jpg" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container">
+    <nav class="nav__pill" aria-label="Main">
+      <a class="wordmark" href="#top">Nightjar</a>
+      <ul class="nav__links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#questions">Questions</a></li>
+      </ul>
+      <div class="nav__end">
+        <a class="login" href="#install">Log in</a>
+        <a class="btn btn--sm" href="#start">Start free</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <figure class="hero__photo" data-slot="hero" data-alt="A landscape at dusk or first light: fog, water or ridges, pale on the left">
+      <img src="images/fog-valley-1920.jpg" srcset="images/fog-valley-960.jpg 960w, images/fog-valley-1280.jpg 1280w, images/fog-valley-1920.jpg 1920w" sizes="100vw" width="1920" height="1254" fetchpriority="high" alt="A sea of fog filling a valley below dark wooded hills at sunset">
+    </figure>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1 id="hero-h">Your site, checked while you sleep.</h1>
+        <p class="lead">Nightjar clicks every page and form each night, then sends one note.</p>
+        <form class="signup" id="start" data-endpoint="" novalidate>
+          <label class="visually-hidden" for="email">Work email</label>
+          <div class="signup__row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
+            <button class="btn" type="submit">Start free</button>
+          </div>
+          <p class="signup__help" id="email-help" aria-live="polite"></p>
+        </form>
+        <p class="hero__terms">Free for one site. No card needed.</p>
+      </div>
+
+      <div class="run glass" data-slot="product" data-kind="product" data-alt="A screenshot of your product's main screen">
+        <div class="run__top">
+          <div>
+            <h2>Last night’s check</h2>
+            <p>example-shop.com, finished 02:14</p>
+          </div>
+          <span class="chip">212 pages</span>
+        </div>
+        <ul>
+          <li data-reveal style="--i:0"><span class="ini" aria-hidden="true">H</span><span class="path">/<small>Home</small></span><span class="state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Passed</span><span class="time num">0.42 s</span></li>
+          <li data-reveal style="--i:1"><span class="ini" aria-hidden="true">P</span><span class="path">/pricing<small>3 links, 1 form</small></span><span class="state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Passed</span><span class="time num">0.38 s</span></li>
+          <li data-reveal style="--i:2"><span class="ini" aria-hidden="true">C</span><span class="path">/checkout<small>Test order placed</small></span><span class="state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Passed</span><span class="time num">0.91 s</span></li>
+          <li data-reveal style="--i:3"><span class="ini" aria-hidden="true">B</span><span class="path">/blog/spring-sale<small>14 links</small></span><span class="state state--open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>2 broken links</span><span class="time num">0.55 s</span></li>
+          <li data-reveal style="--i:4"><span class="ini" aria-hidden="true">F</span><span class="path">/contact<small>Form sent and received</small></span><span class="state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Passed</span><span class="time num">0.47 s</span></li>
+        </ul>
+        <p class="run__flag"><span>/blog/spring-sale links to a page that returns 404</span><a href="#how">Review</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="how" aria-labelledby="how-h">
+    <div class="container row__in">
+      <div class="row__text">
+        <h2 id="how-h">Every link, every form</h2>
+        <p class="lead">Each night Nightjar follows every link, sends every form with test data and times every page.</p>
+      </div>
+      <figure class="month glass" data-slot="month" data-kind="product" data-alt="A screenshot of your product's history view" style="margin:0">
+        <div class="month__top">
+          <h3>Thirty nights on example-shop.com</h3>
+          <span class="muted">Pages checked</span>
+        </div>
+        <ol class="bars" aria-label="Chart: pages checked on each of the last 30 nights, with three flagged nights and one issue still open"><li style="--h:78"></li><li style="--h:82"></li><li style="--h:80"></li><li style="--h:85"></li><li style="--h:79"></li><li style="--h:88"></li><li class="flag" style="--h:90"></li><li style="--h:84"></li><li style="--h:86"></li><li style="--h:83"></li><li style="--h:91"></li><li style="--h:87"></li><li style="--h:89"></li><li style="--h:92"></li><li style="--h:85"></li><li style="--h:93"></li><li style="--h:88"></li><li class="flag" style="--h:90"></li><li style="--h:94"></li><li style="--h:86"></li><li style="--h:92"></li><li style="--h:95"></li><li style="--h:89"></li><li style="--h:93"></li><li class="flag" style="--h:96"></li><li style="--h:91"></li><li style="--h:94"></li><li style="--h:97"></li><li style="--h:95"></li><li class="open" style="--h:98"></li></ol>
+        <dl class="tally">
+          <div><dt>Nights</dt><dd>30</dd></div>
+          <div><dt>Pages checked</dt><dd>6,348</dd></div>
+          <div><dt>Issues found</dt><dd>4</dd></div>
+          <div><dt>Still open</dt><dd class="open">1</dd></div>
+        </dl>
+      </figure>
+    </div>
+  </section>
+
+  <section class="row row--even" aria-labelledby="note-h">
+    <div class="container row__in">
+      <div class="row__text">
+        <h2 id="note-h">One note at seven</h2>
+        <p class="lead">No dashboard to check. A short email lists what broke, where, and how to see it.</p>
+      </div>
+      <div>
+        <div class="well">
+          <article class="note" aria-label="Example morning email">
+            <div class="note__meta">
+              <span><b>Nightjar</b> to you</span>
+              <span>Today, 07:00</span>
+            </div>
+            <h3>1 thing to fix on example-shop.com</h3>
+            <p>Two links on <code>/blog/spring-sale</code> point to a page that no longer exists. Everything else passed.</p>
+            <a class="note__btn" href="#how">Open the report</a>
+          </article>
+        </div>
+        <p class="well-cap"><b>The morning note</b><span>Sent only on nights something needs a person.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="pricing" aria-labelledby="price-h">
+    <div class="container row__in">
+      <div class="row__text">
+        <h2 id="price-h">Priced per site, not per seat</h2>
+        <p class="lead">Invite the whole team. You pay for the sites Nightjar watches.</p>
+        <fieldset class="period" data-period>
+          <legend>Billing period</legend>
+          <input type="radio" name="period" id="per-m" value="m" checked><label for="per-m">Monthly</label>
+          <input type="radio" name="period" id="per-y" value="y"><label for="per-y">Yearly, two months free</label>
+        </fieldset>
+      </div>
+      <div class="plans-wrap glass">
+        <table class="plans">
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col"><span class="plan">Solo</span><span class="price">$0</span><span class="per">forever</span></th>
+              <th scope="col"><span class="plan">Shop</span><span class="price" data-m="$12" data-y="$10">$12</span><span class="per" data-m="a month" data-y="a month, yearly">a month</span></th>
+              <th scope="col"><span class="plan">Studio</span><span class="price" data-m="$39" data-y="$32">$39</span><span class="per" data-m="a month" data-y="a month, yearly">a month</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Sites</th><td class="on">1</td><td class="on">5</td><td class="on">25</td></tr>
+            <tr><th scope="row">Pages a night</th><td class="on">250</td><td class="on">2,500</td><td class="on">25,000</td></tr>
+            <tr><th scope="row">Form tests</th><td class="off">None</td><td class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Included" role="img"><path d="M20 6 9 17l-5-5"/></svg></td><td class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Included" role="img"><path d="M20 6 9 17l-5-5"/></svg></td></tr>
+            <tr><th scope="row">Report kept</th><td class="on">7 days</td><td class="on">90 days</td><td class="on">1 year</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td></td><td><a class="btn btn--ghost btn--sm" href="#start">Start free</a></td><td><a class="btn btn--sm" href="#start">Try Shop</a></td><td><a class="btn btn--ghost btn--sm" href="#start">Try Studio</a></td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="questions" aria-labelledby="faq-h">
+    <div class="container">
+      <div class="row__in" style="align-items:start">
+        <div class="row__text">
+          <h2 id="faq-h">Questions people ask first</h2>
+        </div>
+        <ul class="faq">
+          <li><h3>Will test orders hit my sales?</h3><p>No. Nightjar uses a test card your shop marks as a test, and cancels the order straight after.</p></li>
+          <li><h3>Does it slow my site down?</h3><p>Checks run one page at a time between 01:00 and 05:00 in your time zone.</p></li>
+          <li><h3>Can it log in?</h3><p>Yes. Give it a test account and it checks the pages behind the login too.</p></li>
+          <li><h3>What if nothing breaks?</h3><p>Then you get no email. A weekly summary is there if you want one.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="install" aria-labelledby="install-h">
+    <div class="container row__in">
+      <div class="row__text">
+        <h2 id="install-h">Add one line, sleep tonight</h2>
+        <p class="lead">Paste the tag before <code>&lt;/head&gt;</code>, or just give Nightjar your sitemap.</p>
+        <form class="signup signup--slate" data-endpoint="" novalidate>
+          <label class="visually-hidden" for="email-2">Work email</label>
+          <div class="signup__row">
+            <input id="email-2" name="email" type="email" autocomplete="email" placeholder="Work email" required>
+            <button class="btn" type="submit">Start free</button>
+          </div>
+          <p class="signup__help" id="email-2-help" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="code glass">
+        <div class="code__top">
+          <span>index.html</span>
+          <button class="copy" type="button" data-copy="snippet">Copy</button>
+        </div>
+<pre id="snippet"><code><span class="k">&lt;script</span> src=<span class="s">"https://cdn.nightjar.example/check.js"</span>
+        data-site=<span class="s">"example-shop.com"</span>
+        data-note=<span class="s">"07:00"</span> defer<span class="k">&gt;&lt;/script&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot__in">
+    <div class="foot__brand">
+      <a class="wordmark" href="#top">Nightjar</a>
+      <p>Checks every page of your site overnight and tells you what broke.</p>
+    </div>
+    <div>
+      <h2>Product</h2>
+      <ul><li><a href="#how">How it works</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#install">Install</a></li></ul>
+    </div>
+    <div>
+      <h2>Help</h2>
+      <ul><li><a href="#questions">Questions</a></li><li><a href="mailto:hello@example.com">Email us</a></li></ul>
+    </div>
+    <div>
+      <h2>Account</h2>
+      <ul><li><a href="#start">Start free</a></li><li><a href="#install">Log in</a></li></ul>
+    </div>
+    <div class="foot__small">
+      <p>© <span data-year>2026</span> Nightjar</p>
+      <p data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Vallee-brouillard.jpg">Thomas Bresson</a> (CC BY 3.0, Wikimedia Commons)</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Reveal the hero rows once */
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -5% 0px' });
+document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+
+/* Monthly or yearly prices */
+document.querySelectorAll('[data-period] input').forEach((r) => r.addEventListener('change', () => {
+  document.querySelectorAll('[data-m]').forEach((el) => { el.textContent = el.dataset[r.value]; });
+}));
+
+/* Copy the snippet */
+document.querySelectorAll('[data-copy]').forEach((b) => b.addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById(b.dataset.copy).innerText).then(() => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy'; }, 1600); }).catch(() => { b.textContent = 'Select and copy'; });
+}));
+
+/* Sign-up forms: set data-endpoint to your sign-up URL to make them send */
+document.querySelectorAll('form[data-endpoint]').forEach((form) => {
+  const input = form.querySelector('input'), help = form.querySelector('[aria-live]'), btn = form.querySelector('button');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const ok = input.checkValidity();
+    input.toggleAttribute('aria-invalid', !ok);
+    if (!ok) { input.setAttribute('aria-describedby', help.id); help.textContent = 'That address looks incomplete. Write it as name@example.com.'; input.focus(); return; }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: this form is not connected yet.'; return; }
+    btn.setAttribute('aria-busy', 'true');
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then((r) => { help.textContent = r.ok ? 'Check ' + input.value.trim() + ' for your sign-in link.' : 'That did not go through. Try again in a minute.'; })
+      .catch(() => { help.textContent = 'That did not go through. Try again in a minute.'; })
+      .finally(() => btn.removeAttribute('aria-busy'));
+  });
+});
+document.querySelector('[data-year]').textContent = new Date().getFullYear();
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
