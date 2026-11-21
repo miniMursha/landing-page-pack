@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pell Street Canteen</title>
+<meta name="description" content="Breakfast, lunch and supper on Pell Street. Today's menu, opening hours and the next supper nights.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&amp;family=Bevan&amp;family=Archivo+Narrow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="mast">
+  <div class="container mast__in">
+    <a class="mast__start" href="#board">Today’s menu</a>
+    <a class="wordmark" href="#top" aria-label="Pell Street Canteen, home">Pell Street Canteen</a>
+    <a class="mast__end" href="#ask">Book supper</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="container">
+      <div class="hero__grid">
+        <div data-fit>
+          <h1 id="hero-h"><span class="fit">Breakfast to supper</span><span class="fit">on Pell Street</span></h1>
+          <p class="display hero__red" aria-hidden="true"><span class="fit" data-fit-scale="0.62">Seven days from 7am</span></p>
+        </div>
+        <div class="hero__side">
+          <p>Eggs and coffee all day, and supper three nights a week.</p>
+          <div class="actions">
+            <a class="btn" href="#board">See today’s menu</a>
+            <a class="btn btn--frame" href="#ask">Book supper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="board" id="board" aria-labelledby="board-h">
+    <div class="container board__in">
+      <div>
+        <div class="frame photo-frame">
+          <figure class="photo" data-slot="board" data-alt="Your own photograph of a dish from the menu, taken from above">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Two_fried_eggs.jpg/1280px-Two_fried_eggs.jpg"
+                 srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Two_fried_eggs.jpg/960px-Two_fried_eggs.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Two_fried_eggs.jpg/1280px-Two_fried_eggs.jpg 1280w"
+                 sizes="(min-width: 60rem) 36vw, 100vw" width="2047" height="1570" loading="lazy"
+                 alt="Two fried eggs with black pepper in a dark iron pan, seen from above">
+          </figure>
+        </div>
+        <p class="caption">Two eggs any way, cooked in iron until the edges crisp.</p>
+      </div>
+
+      <div class="board__menu">
+        <h2 id="board-h">On the board today</h2>
+        <div class="tabs" role="tablist" aria-label="Menu" data-tabs>
+          <button type="button" role="tab" id="t-b" aria-selected="true" aria-controls="m-b">Breakfast</button>
+          <button type="button" role="tab" id="t-l" aria-selected="false" aria-controls="m-l" tabindex="-1">Lunch</button>
+          <button type="button" role="tab" id="t-s" aria-selected="false" aria-controls="m-s" tabindex="-1">Supper</button>
+        </div>
+        <div>
+          <div class="menu" role="tabpanel" id="m-b" aria-labelledby="t-b">
+            <p class="menu__when">Breakfast, 7:00 to 11:30</p>
+            <ul class="dishes">
+              <li><b>Two eggs any way</b><span>Sourdough toast, salted butter</span><b class="price">£6.50</b></li>
+              <li><b>Bacon roll</b><span>Soft white bap, brown sauce</span><b class="price">£5.00</b></li>
+              <li><b>Porridge</b><span>Stewed apple, dark sugar</span><b class="price">£5.50</b></li>
+              <li><b>Mushrooms on toast</b><span>Thyme, garlic, hard cheese</span><b class="price">£8.00</b></li>
+              <li><b>The full plate</b><span>Eggs, bacon, sausage, beans, toast</span><b class="price">£11.50</b></li>
+            </ul>
+          </div>
+          <div class="menu" role="tabpanel" id="m-l" aria-labelledby="t-l">
+            <p class="menu__when">Lunch, 12:00 to 15:30</p>
+            <ul class="dishes">
+              <li><b>Soup of the day</b><span>Bread and butter</span><b class="price">£6.00</b></li>
+              <li><b>Ham hock sandwich</b><span>Mustard, pickles, rye</span><b class="price">£8.50</b></li>
+              <li><b>Leek and cheddar tart</b><span>Dressed leaves</span><b class="price">£9.50</b></li>
+              <li><b>Fish finger sandwich</b><span>Tartare, lettuce</span><b class="price">£9.00</b></li>
+              <li><b>Rice pudding</b><span>A spoon of jam</span><b class="price">£4.50</b></li>
+            </ul>
+          </div>
+          <div class="menu" role="tabpanel" id="m-s" aria-labelledby="t-s">
+            <p class="menu__when">Supper, 18:00 to 22:00 on supper nights</p>
+            <ul class="dishes">
+              <li><b>Roast chicken</b><span>Leeks, bread sauce</span><b class="price">£16.00</b></li>
+              <li><b>Fish stew</b><span>Aioli, toast</span><b class="price">£17.00</b></li>
+              <li><b>Mushroom and barley pie</b><span>Buttered greens</span><b class="price">£14.00</b></li>
+              <li><b>Treacle tart</b><span>Cold cream</span><b class="price">£6.00</b></li>
+              <li><b>House wine</b><span>Red or white, by the glass</span><b class="price">£6.00</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="week" id="hours" aria-labelledby="week-h">
+    <div class="container">
+      <h2 id="week-h">When the door is open</h2>
+      <div class="bill" data-bill>
+        <div data-days="1,2,3,4,5" data-fit>
+          <p class="display"><span class="fit">Monday to Friday</span></p>
+          <h3>7am to 4pm</h3>
+          <p>Breakfast until half eleven, lunch from noon.</p>
+        </div>
+        <div data-days="0,6" data-fit>
+          <p class="display"><span class="fit">Saturday and Sunday</span></p>
+          <h3>8am to 4pm</h3>
+          <p>Breakfast all morning. Busy from ten, so come early.</p>
+        </div>
+        <div data-days="4,5,6" data-fit data-supper>
+          <p class="display"><span class="fit">Thursday to Saturday</span></p>
+          <h3>Supper 6pm to 10pm</h3>
+          <p>Booked tables, and a few kept back for walk-ins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="suppers" aria-labelledby="nights-h">
+    <div class="container suppers__in">
+      <h2 id="nights-h">The next supper nights</h2>
+      <ul class="nights" data-nights>
+        <li><p class="display">Thu 26 Nov</p><div><h3>Roast chicken night</h3><p>Leeks, bread sauce, and the bird carved at the table.</p></div><a href="#ask">Ask for a table</a></li>
+        <li><p class="display">Fri 27 Nov</p><div><h3>Fish stew night</h3><p>Whatever the boats brought in, with aioli and toast.</p></div><a href="#ask">Ask for a table</a></li>
+        <li><p class="display">Sat 28 Nov</p><div><h3>Pie night</h3><p>Mushroom and barley, or steak and ale, with greens.</p></div><a href="#ask">Ask for a table</a></li>
+        <li><p class="display">Thu 3 Dec</p><div><h3>Roast chicken night</h3><p>Leeks, bread sauce, and the bird carved at the table.</p></div><a href="#ask">Ask for a table</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="ask grained" id="ask" aria-labelledby="ask-h">
+    <div class="container ask__in">
+      <div class="ask__text">
+        <h2 id="ask-h">Ask for a supper table</h2>
+        <p>Tell us the night and how many. We ring back to confirm.</p>
+      </div>
+      <form data-endpoint="" novalidate>
+        <div class="field">
+          <label for="a-name">Your name</label>
+          <input id="a-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="a-phone">Phone</label>
+          <input id="a-phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="a-night">Night</label>
+          <select id="a-night" name="night" data-night-select required>
+            <option>Thu 26 Nov</option><option>Fri 27 Nov</option><option>Sat 28 Nov</option><option>Thu 3 Dec</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="a-people">People</label>
+          <select id="a-people" name="people" required>
+            <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </div>
+        <div class="ask__foot">
+          <button class="btn" type="submit">Ask for this table</button>
+          <p class="ask__help" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="here" aria-labelledby="here-h">
+    <div class="container here__in">
+      <div>
+        <h2 id="here-h">Finding Pell Street</h2>
+        <dl class="facts">
+          <div><dt>Address</dt><dd><span class="fill" data-fill="address">Your street address and postcode</span></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+441632960456">01632 960 456</a></dd></div>
+          <div><dt>Tables</dt><dd>Walk in for breakfast and lunch. Book for supper.</dd></div>
+          <div><dt>Groups</dt><dd>Six or more, ring the day before.</dd></div>
+          <div><dt>Dogs</dt><dd>Welcome at the window tables.</dd></div>
+        </dl>
+      </div>
+      <div>
+        <div class="frame photo-frame">
+          <figure class="photo" data-slot="here" data-alt="Your counter, your coffee machine or the front of the café">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Espresso_coffee_pouring_from_retro_espresso_machine.jpg/960px-Espresso_coffee_pouring_from_retro_espresso_machine.jpg"
+                 srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Espresso_coffee_pouring_from_retro_espresso_machine.jpg/960px-Espresso_coffee_pouring_from_retro_espresso_machine.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Espresso_coffee_pouring_from_retro_espresso_machine.jpg/1280px-Espresso_coffee_pouring_from_retro_espresso_machine.jpg 1280w"
+                 sizes="(min-width: 60rem) 36vw, 100vw" width="4016" height="6016" loading="lazy"
+                 alt="Espresso streaming from a chrome machine into two glass cups">
+          </figure>
+        </div>
+        <p class="caption">Espresso pulled on a lever machine, all day.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot__in">
+    <p class="wordmark">Pell Street Canteen</p>
+    <p class="foot__about">A neighbourhood canteen serving breakfast and lunch every day and supper three nights a week. <a href="#board">Menu</a>, <a href="#hours">hours</a> and <a href="#ask">supper tables</a> are all on this page.</p>
+    <div class="foot__small">
+      <p data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Two_fried_eggs.jpg">Balise42</a> (CC BY-SA 4.0, Wikimedia Commons), <a href="https://commons.wikimedia.org/wiki/File:Espresso_coffee_pouring_from_retro_espresso_machine.jpg">Shixart1985</a> (CC BY 2.0, Wikimedia Commons)</p>
+      <p>© <span data-year>2026</span> Pell Street Canteen</p>
+    </div>
+  </div>
+</footer>
+
+<div class="today" role="region" aria-label="Today’s hours">
+  <div class="container today__in">
+    <p data-today>Open daily from 7am</p>
+    <div class="today__end">
+      <a href="#here-h">Find us</a>
+      <a class="btn" href="#ask">Book supper</a>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== Customise here: opening hours and supper nights ===== */
+const HOURS = { 0: [8, 16], 1: [7, 16], 2: [7, 16], 3: [7, 16], 4: [7, 16], 5: [7, 16], 6: [8, 16] }; // day (0 = Sunday): [open, close]
+const SUPPER = { 4: 'Roast chicken night', 5: 'Fish stew night', 6: 'Pie night' };                   // supper nights by day
+const SUPPER_HOURS = [18, 22];
+const SUPPER_LINE = { 4: 'Leeks, bread sauce, and the bird carved at the table.', 5: 'Whatever the boats brought in, with aioli and toast.', 6: 'Mushroom and barley, or steak and ale, with greens.' };
+
+const now = new Date(), D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const t = (h) => (h === 12 ? '12pm' : h > 12 ? `${h - 12}pm` : `${h}am`);
+
+/* The next four supper nights, from the calendar */
+(() => {
+  const nights = [];
+  for (let d = 0; d < 21 && nights.length < 4; d++) {
+    const day = new Date(now); day.setDate(now.getDate() + d);
+    if (!SUPPER[day.getDay()] || (d === 0 && now.getHours() >= SUPPER_HOURS[1])) continue;
+    nights.push({ label: `${D[day.getDay()]} ${day.getDate()} ${M[day.getMonth()]}`, name: SUPPER[day.getDay()], line: SUPPER_LINE[day.getDay()] });
+  }
+  document.querySelector('[data-nights]').innerHTML = nights.map((n) => `<li><p class="display">${n.label}</p><div><h3>${n.name}</h3><p>${n.line}</p></div><a href="#ask" data-night="${n.label}">Ask for a table</a></li>`).join('');
+  const sel = document.querySelector('[data-night-select]');
+  sel.innerHTML = nights.map((n) => `<option>${n.label}</option>`).join('');
+  document.querySelector('[data-nights]').addEventListener('click', (e) => { const a = e.target.closest('[data-night]'); if (a) sel.value = a.dataset.night; });
+})();
+
+/* Today's hours in the bar, today's column on the bill */
+(() => {
+  const day = now.getDay(), h = now.getHours() + now.getMinutes() / 60, hrs = HOURS[day], sup = SUPPER[day];
+  const el = document.querySelector('[data-today]');
+  let text;
+  if (hrs && h < hrs[1]) text = `${h >= hrs[0] ? 'Open now' : 'Open today'} ${t(hrs[0])} to ${t(hrs[1])}` + (sup ? `<span>, supper ${t(SUPPER_HOURS[0])} to ${t(SUPPER_HOURS[1])}</span>` : '');
+  else if (sup && h < SUPPER_HOURS[1]) text = `Supper tonight ${t(SUPPER_HOURS[0])} to ${t(SUPPER_HOURS[1])}`;
+  else { const n = (day + 1) % 7; text = `Closed now<span>, open tomorrow from ${t(HOURS[n][0])}</span>`; }
+  el.innerHTML = text;
+  const col = [...document.querySelectorAll('[data-bill] > div')].find((c) => c.dataset.days.split(',').includes(String(day)) && !('supper' in c.dataset));
+  if (col) col.classList.add('is-today');
+  document.querySelector('[data-year]').textContent = now.getFullYear();
+})();
+
+/* Wood type fitted to its measure */
+const fitAll = () => document.querySelectorAll('[data-fit]').forEach((box) => {
+  const w = box.clientWidth - parseFloat(getComputedStyle(box).paddingLeft) - parseFloat(getComputedStyle(box).paddingRight);
+  box.querySelectorAll('.fit').forEach((line) => {
+    line.style.fontSize = '100px';
+    const scale = Number(line.dataset.fitScale || 1);
+    line.style.fontSize = Math.min(Math.floor((w * scale / line.scrollWidth) * 100), 320) + 'px';
+  });
+});
+(document.fonts ? document.fonts.ready : Promise.resolve()).then(fitAll);
+new ResizeObserver(() => fitAll()).observe(document.body);
+
+/* Menu tabs: arrow keys move between them; without script all three menus show */
+document.querySelectorAll('[data-tabs]').forEach((list) => {
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  const show = (tab, focus) => { tabs.forEach((x) => { const on = x === tab; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; }); if (focus) tab.focus(); };
+  tabs.forEach((tab, i) => { tab.addEventListener('click', () => show(tab)); tab.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show(tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length], true); } }); });
+  const hour = now.getHours();
+  show(tabs[hour < 12 ? 0 : hour < 17 || !SUPPER[now.getDay()] ? 1 : 2]);
+});
+
+/* Supper form: set data-endpoint (Formspree, Netlify Forms, your own) to make it send */
+document.querySelectorAll('form[data-endpoint]').forEach((form) => {
+  const help = form.querySelector('[aria-live]'), btn = form.querySelector('[type="submit"]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [...form.elements].filter((f) => f.willValidate && !f.checkValidity());
+    form.querySelectorAll('[aria-invalid]').forEach((f) => f.removeAttribute('aria-invalid'));
+    if (bad.length) { bad.forEach((f) => f.setAttribute('aria-invalid', 'true')); help.textContent = 'Add your name and phone so we can ring back.'; bad[0].focus(); return; }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: this form is not connected yet.'; return; }
+    btn.setAttribute('aria-busy', 'true');
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then((r) => { help.textContent = r.ok ? 'Asked. We ring back to confirm the table.' : 'That did not go through. Please ring us instead.'; })
+      .catch(() => { help.textContent = 'That did not go through. Please ring us instead.'; })
+      .finally(() => btn.removeAttribute('aria-busy'));
+  });
+});
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
