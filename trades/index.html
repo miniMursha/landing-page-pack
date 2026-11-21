@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larch Street Plumbing &amp; Electric</title>
+<meta name="description" content="A local plumber and electrician. Pick a two-hour visit window, get a fixed quote before any work starts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="slab">
+  <div class="container slab__in">
+    <a class="wordmark" href="#top">Larch Street Plumbing &amp; Electric</a>
+    <div class="slab__end">
+      <span class="tag tag--out" role="status" data-status>Open Monday to Saturday</span>
+      <a class="slab__phone" href="tel:+441632960123">01632 960 123</a>
+      <a class="btn btn--paper" href="#book">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="container">
+      <div class="hero__head">
+        <h1 id="hero-h">A plumber or electrician, today.</h1>
+        <div class="hero__side">
+          <p class="lead">A fixed quote before we start, from a crew down the road.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#book">Book a visit</a>
+            <a class="btn" href="tel:+441632960123">Call us now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slots">
+        <table>
+          <caption>Next free visit windows</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Window</th><th scope="col">Plumbing</th><th scope="col">Electrical</th><th scope="col"><span class="visually-hidden">Book</span></th></tr>
+          </thead>
+          <tbody data-slots>
+            <tr><td>Monday</td><td class="num">10:00 to 12:00</td><td><span class="tag tag--in"><span class="m">Plumber </span>free</span></td><td><span class="tag tag--out"><span class="m">Electrician </span>booked</span></td><td><a class="link" href="#book">Book</a></td></tr>
+            <tr><td>Monday</td><td class="num">14:00 to 16:00</td><td><span class="tag tag--in"><span class="m">Plumber </span>free</span></td><td><span class="tag tag--in"><span class="m">Electrician </span>free</span></td><td><a class="link" href="#book">Book</a></td></tr>
+            <tr><td>Tuesday</td><td class="num">08:00 to 10:00</td><td><span class="tag tag--out"><span class="m">Plumber </span>booked</span></td><td><span class="tag tag--in"><span class="m">Electrician </span>free</span></td><td><a class="link" href="#book">Book</a></td></tr>
+            <tr><td>Tuesday</td><td class="num">10:00 to 12:00</td><td><span class="tag tag--in"><span class="m">Plumber </span>free</span></td><td><span class="tag tag--in"><span class="m">Electrician </span>free</span></td><td><a class="link" href="#book">Book</a></td></tr>
+            <tr><td>Tuesday</td><td class="num">12:00 to 14:00</td><td><span class="tag tag--in"><span class="m">Plumber </span>free</span></td><td><span class="tag tag--in"><span class="m">Electrician </span>free</span></td><td><a class="link" href="#book">Book</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bleed" aria-label="What the van carries">
+    <figure class="photo photo--wide" data-slot="van" data-alt="Your van, workshop or tools: the parts you carry to every job">
+      <img src="images/pegboard-1920.jpg"
+           srcset="images/pegboard-960.jpg 960w, images/pegboard-1280.jpg 1280w, images/pegboard-1920.jpg 1920w"
+           sizes="100vw" width="6016" height="4016" loading="lazy"
+           alt="Pliers, wrenches and screwdrivers hung on a pegboard wall">
+    </figure>
+    <div class="container">
+      <p class="caption">The common parts ride in the van, so most jobs finish on the first visit.</p>
+    </div>
+  </section>
+
+  <section class="stages" aria-label="How a visit goes">
+    <div class="container">
+      <ol class="stages__list">
+        <li class="stage" id="book">
+          <div class="stage__text">
+            <h2>1. Pick a window</h2>
+            <p>Choose two hours that suit you and tell us what’s wrong. A photo helps us bring the right part.</p>
+          </div>
+          <form class="book" data-endpoint="" novalidate>
+            <div class="field">
+              <label for="b-name">Your name</label>
+              <input id="b-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="b-post">Postcode</label>
+              <input id="b-post" name="postcode" type="text" autocomplete="postal-code" required>
+            </div>
+            <div class="field">
+              <label for="b-window">Window</label>
+              <select id="b-window" name="window" data-window-select required>
+                <option>Monday, 10:00 to 12:00</option>
+                <option>Monday, 14:00 to 16:00</option>
+                <option>Tuesday, 08:00 to 10:00</option>
+              </select>
+            </div>
+            <div class="field field--wide">
+              <label for="b-what">What’s wrong?</label>
+              <textarea id="b-what" name="problem" required></textarea>
+            </div>
+            <div class="book__foot">
+              <button class="btn btn--primary" type="submit">Request this window</button>
+              <p class="book__help" id="b-help" aria-live="polite"></p>
+            </div>
+          </form>
+        </li>
+
+        <li class="stage">
+          <div class="stage__text">
+            <h2>2. A price before we start</h2>
+            <p>We look, then write the price down. Nothing starts until you say yes.</p>
+          </div>
+          <div class="quote well">
+            <div class="quote__top">
+              <h3>Example quote</h3>
+              <span class="tag tag--in">Fixed price</span>
+            </div>
+            <table>
+              <tbody>
+                <tr><td>Kitchen mixer tap, supplied</td><td class="num">£80</td></tr>
+                <tr><td>Fitting, isolation valves and leak test</td><td class="num">£60</td></tr>
+                <tr><td>Old tap taken away</td><td class="num">£0</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Agreed before work</td><td class="num">£140</td></tr>
+              </tfoot>
+            </table>
+          </div>
+        </li>
+
+        <li class="stage">
+          <div class="stage__text">
+            <h2>3. Tested, then paid</h2>
+            <p>We test the work in front of you and sweep up. Pay by card or bank transfer.</p>
+          </div>
+          <table class="checks">
+            <thead><tr><th scope="col">Before we leave</th><th scope="col">Result</th></tr></thead>
+            <tbody>
+              <tr><td>Pressure held for ten minutes</td><td><span class="tag tag--in">Passed</span></td></tr>
+              <tr><td>Every joint dry</td><td><span class="tag tag--in">Passed</span></td></tr>
+              <tr><td>Circuit tested and labelled</td><td><span class="tag tag--in">Passed</span></td></tr>
+              <tr><td>Floor swept, old parts gone</td><td><span class="tag tag--on">Done</span></td></tr>
+            </tbody>
+          </table>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="services" aria-labelledby="svc-h">
+    <div class="container">
+      <div class="services__head">
+        <h2 id="svc-h">What we fix</h2>
+        <div class="seg" role="tablist" aria-label="Trade" data-tabs>
+          <button type="button" role="tab" id="t-plumb" aria-selected="true" aria-controls="p-plumb">Plumbing</button>
+          <button type="button" role="tab" id="t-elec" aria-selected="false" aria-controls="p-elec" tabindex="-1">Electrical</button>
+        </div>
+      </div>
+      <div class="panel" role="tabpanel" id="p-plumb" aria-labelledby="t-plumb">
+        <p class="panel__name">Plumbing</p>
+        <ul class="rows">
+          <li><h3>Leaks and drips</h3><p>Taps, pipes, cisterns and the stain spreading on the ceiling.</p></li>
+          <li><h3>Blocked drains</h3><p>Sinks, showers and toilets cleared, then the cause found.</p></li>
+          <li><h3>Taps, toilets and showers</h3><p>Repaired or replaced, with parts you choose or we bring.</p></li>
+          <li><h3>Radiators and valves</h3><p>Cold spots, bleeding, new valves and moved radiators.</p></li>
+          <li><h3>Burst pipes</h3><p>Water off, damage stopped, the pipe made good.</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="p-elec" aria-labelledby="t-elec">
+        <p class="panel__name">Electrical</p>
+        <ul class="rows">
+          <li><h3>Sockets and switches</h3><p>New, moved or replaced, including USB sockets.</p></li>
+          <li><h3>Lighting</h3><p>Ceiling lights, spotlights, dimmers and outdoor lights.</p></li>
+          <li><h3>Fuse boards</h3><p>Upgrades to a modern board with RCD protection.</p></li>
+          <li><h3>Fault finding</h3><p>Tripping circuits and dead sockets traced and fixed.</p></li>
+          <li><h3>Safety checks</h3><p>A written report on your wiring, for landlords and buyers.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours" aria-labelledby="hours-h">
+    <div class="container hours__in">
+      <div class="hours__text">
+        <h2 id="hours-h">Out six days a week</h2>
+        <p>Homes and small shops within five miles of <span class="fill" data-fill="address">your street and town</span>.</p>
+        <a class="hours__phone" href="tel:+441632960123">01632 960 123</a>
+        <div class="actions">
+          <a class="btn btn--primary" href="#book">Book a visit</a>
+        </div>
+      </div>
+      <table class="week" data-week>
+        <tbody>
+          <tr data-days="1,2,3,4,5"><th scope="row">Monday to Friday</th><td class="num">7:00 to 19:00</td></tr>
+          <tr data-days="6"><th scope="row">Saturday</th><td class="num">8:00 to 14:00</td></tr>
+          <tr data-days="0"><th scope="row">Sunday</th><td class="quiet">Burst pipes and power cuts only</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot__in">
+    <p class="foot__about"><b>Larch Street Plumbing &amp; Electric</b> fixes leaks, drains, wiring and lights for homes and small shops nearby. Every job starts with a written price and ends with a test you can watch.</p>
+    <ul class="foot__links">
+      <li><a class="link" href="#book">Book a visit</a></li>
+      <li><a class="link" href="#svc-h">What we fix</a></li>
+      <li><a class="link" href="#hours-h">Hours</a></li>
+    </ul>
+    <div class="foot__small">
+      <p data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Various_tools_hanging_on_a_pegboard_in_a_workshop_setting_with_natural_light_filtering_in.jpg">Shixart1985</a> (CC BY 2.0, Wikimedia Commons)</p>
+      <p>© <span data-year>2026</span> Larch Street Plumbing &amp; Electric</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== Customise here: your opening hours, visit windows and booked slots ===== */
+const HOURS = { 0: null, 1: [7, 19], 2: [7, 19], 3: [7, 19], 4: [7, 19], 5: [7, 19], 6: [8, 14] }; // day of week (0 = Sunday): [open, close]
+const WINDOWS = [8, 10, 12, 14, 16];   // start hour of each two-hour visit window
+const BOOKED = { '2026-12-01-10': 'p' }; // "YYYY-MM-DD-hour": p = plumber booked, e = electrician booked, pe = both
+const DEMO = true;                       // demo only: marks a few windows booked so both states show. Set to false on your live site
+const SHOW = 5;                          // how many windows the list shows
+
+const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const pad = (h) => String(h).padStart(2, '0') + ':00';
+const now = new Date();
+
+function nextWindows() {
+  const out = [];
+  for (let d = 0; d < 14 && out.length < SHOW; d++) {
+    const day = new Date(now); day.setDate(now.getDate() + d);
+    const hrs = HOURS[day.getDay()]; if (!hrs) continue;
+    for (const h of WINDOWS) {
+      if (h < hrs[0] || h + 2 > hrs[1]) continue;
+      if (d === 0 && h <= now.getHours()) continue;
+      const key = `${day.getFullYear()}-${String(day.getMonth() + 1).padStart(2, '0')}-${String(day.getDate()).padStart(2, '0')}-${h}`;
+      const b = BOOKED[key] || (DEMO ? ['', 'e', '', 'p', ''][out.length % 5] : '');
+      if (b.includes('p') && b.includes('e')) continue;
+      const label = d === 0 ? 'Today' : d === 1 ? 'Tomorrow' : DAYS[day.getDay()];
+      out.push({ label, time: `${pad(h)} to ${pad(h + 2)}`, p: !b.includes('p'), e: !b.includes('e') });
+      if (out.length === SHOW) break;
+    }
+  }
+  return out;
+}
+
+const tag = (free, who) => `<span class="tag ${free ? 'tag--in' : 'tag--out'}"><span class="m">${who} </span>${free ? 'free' : 'booked'}</span>`;
+const wins = nextWindows();
+const body = document.querySelector('[data-slots]');
+const select = document.querySelector('[data-window-select]');
+if (wins.length) {
+  body.innerHTML = wins.map((w, i) => `<tr><td>${w.label}</td><td class="num">${w.time}</td><td>${tag(w.p, 'Plumber')}</td><td>${tag(w.e, 'Electrician')}</td><td><a class="link" href="#book" data-pick="${i}">Book<span class="visually-hidden"> ${w.label}, ${w.time}</span></a></td></tr>`).join('');
+  select.innerHTML = wins.map((w) => `<option>${w.label}, ${w.time}</option>`).join('');
+  body.addEventListener('click', (e) => { const a = e.target.closest('[data-pick]'); if (a) select.selectedIndex = Number(a.dataset.pick); });
+}
+
+/* Open or closed, from the clock */
+(() => {
+  const el = document.querySelector('[data-status]');
+  const today = HOURS[now.getDay()], h = now.getHours() + now.getMinutes() / 60;
+  if (today && h >= today[0] && h < today[1]) { el.textContent = `Open now, until ${today[1]}:00`; el.className = 'tag tag--in'; }
+  else {
+    for (let d = 1; d < 8; d++) { const day = (now.getDay() + d) % 7, hrs = HOURS[day]; if (today && h < today[0]) { el.textContent = `Closed, opens today at ${today[0]}:00`; break; } if (hrs) { el.textContent = `Closed, opens ${d === 1 ? 'tomorrow' : DAYS[day]} at ${hrs[0]}:00`; break; } }
+  }
+  const row = document.querySelector(`[data-week] tr[data-days*="${now.getDay()}"] th`);
+  if (row) row.insertAdjacentHTML('beforeend', ' <span class="tag tag--on">Today</span>');
+  document.querySelector('[data-year]').textContent = now.getFullYear();
+})();
+
+/* Trade tabs: arrow keys move between them; without script both lists show */
+document.querySelectorAll('[data-tabs]').forEach((list) => {
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  const show = (t, focus) => { tabs.forEach((x) => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; }); if (focus) t.focus(); };
+  tabs.forEach((t, i) => { t.addEventListener('click', () => show(t)); t.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show(tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length], true); } }); });
+  show(tabs[0]);
+});
+
+/* Booking form: set data-endpoint on the form (Formspree, Netlify Forms, your own) to make it send */
+document.querySelectorAll('form[data-endpoint]').forEach((form) => {
+  const help = form.querySelector('[aria-live]'), btn = form.querySelector('[type="submit"]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [...form.elements].filter((f) => f.willValidate && !f.checkValidity());
+    form.querySelectorAll('[aria-invalid]').forEach((f) => f.removeAttribute('aria-invalid'));
+    if (bad.length) { bad.forEach((f) => f.setAttribute('aria-invalid', 'true')); help.textContent = 'Fill in the marked fields so we can call you back.'; bad[0].focus(); return; }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: this form is not connected yet.'; return; }
+    btn.setAttribute('aria-busy', 'true');
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then((r) => { help.textContent = r.ok ? 'Request received. We will call to confirm the window.' : 'That did not go through. Please call us instead.'; })
+      .catch(() => { help.textContent = 'That did not go through. Please call us instead.'; })
+      .finally(() => btn.removeAttribute('aria-busy'));
+  });
+});
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
