@@ -1,0 +1,26 @@
+Photographs (all from Wikimedia Commons)
+
+trades/images/pegboard-*.jpg
+  "Various tools hanging on a pegboard in a workshop setting with natural light filtering in" by Shixart1985
+  Licence: CC BY 2.0, https://creativecommons.org/licenses/by/2.0/
+  Source: https://commons.wikimedia.org/wiki/File:Various_tools_hanging_on_a_pegboard_in_a_workshop_setting_with_natural_light_filtering_in.jpg
+
+launch/images/fog-valley-*.jpg
+  "Vallee-brouillard" by Thomas Bresson
+  Licence: CC BY 3.0, https://creativecommons.org/licenses/by/3.0/
+  Source: https://commons.wikimedia.org/wiki/File:Vallee-brouillard.jpg
+
+cafe/images/eggs-*.jpg
+  "Two fried eggs" by Balise42
+  Licence: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/
+  Source: https://commons.wikimedia.org/wiki/File:Two_fried_eggs.jpg
+
+cafe/images/espresso-*.jpg
+  "Espresso coffee pouring from retro espresso machine" by Shixart1985
+  Licence: CC BY 2.0, https://creativecommons.org/licenses/by/2.0/
+  Source: https://commons.wikimedia.org/wiki/File:Espresso_coffee_pouring_from_retro_espresso_machine.jpg
+
+The photos are unmodified apart from resizing. On the pages, CSS filters change how they display. The files themselves are not altered.
+
+Fonts load from Google Fonts under the SIL Open Font License:
+Epilogue, Wix Madefor Display, Wix Madefor Text, Six Caps, Bevan, Archivo Narrow, Instrument Sans, Instrument Serif.
