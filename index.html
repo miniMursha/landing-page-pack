@@ -23,10 +23,12 @@
 html, body { overflow-x: clip; }
 body { margin: 0; background: var(--color-paper); color: var(--color-ink); font: 400 var(--text-md)/1.55 var(--font-body); -webkit-font-smoothing: antialiased; }
 h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.02; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
-h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-title); letter-spacing: -0.01em; line-height: 1.2; }
+h3, .h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-title); letter-spacing: -0.01em; line-height: 1.2; }
 p { margin: 0; text-wrap: pretty; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; border-radius: 4px; }
 .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
 .skip { position: absolute; left: var(--space-md); top: calc(-1 * var(--space-3xl)); padding: var(--space-xs) var(--space-md); background: var(--color-ink); color: var(--color-paper); }
@@ -44,9 +46,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
 .top b { font-weight: 600; }
 
 .intro { padding-block: var(--space-3xl) var(--space-2xl); }
-.intro__in { display: grid; gap: var(--space-lg); max-width: 44ch; }
-.intro h1 { font-size: var(--text-display); }
-.intro .lead { font-size: var(--text-lead); line-height: 1.45; color: var(--color-ink-2); }
+.intro__in { display: grid; gap: var(--space-lg); }
+.intro h1 { font-size: var(--text-display); max-width: 14ch; }
+.intro .lead { font-size: var(--text-lead); line-height: 1.45; color: var(--color-ink-2); max-width: 46ch; }
 .actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 .price { font-weight: 600; }
 
@@ -89,7 +91,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
   <section class="intro" aria-labelledby="h">
     <div class="container intro__in">
       <h1 id="h">Three landing pages, ready to edit</h1>
-      <p class="lead">Plain HTML and CSS, no build step. Change the words, colours and photos, then upload anywhere.</p>
+      <p class="lead">Plain HTML and CSS. Change the words and photos, then upload.</p>
       <div class="actions">
         <a class="btn" href="#buy" data-buy>Buy the pack, <span class="price">$29</span></a>
         <a class="btn btn--quiet" href="trades/">Open a live demo</a>
@@ -102,7 +104,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
       <li class="page">
         <a class="shot" href="trades/" aria-label="Open the local trades demo"><img src="shots/trades.jpg" width="1440" height="900" alt="The trades template: a plumber and electrician page listing the next free visit windows"></a>
         <div class="page__text">
-          <h3>Local trades</h3>
+          <h2 class="h3">Local trades</h2>
           <p>For plumbers, electricians, cleaners and anyone who books visits.</p>
           <ul><li>Next free windows, worked out from your hours</li><li>Booking form, written quote and checklist</li><li>Open or closed, shown live in the nav</li></ul>
           <a href="trades/">Open the demo</a>
@@ -111,7 +113,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
       <li class="page">
         <a class="shot" href="launch/" aria-label="Open the app launch demo"><img src="shots/launch.jpg" width="1440" height="900" alt="The launch template: an app page with a product panel in smoked glass over a foggy valley at dusk" loading="lazy"></a>
         <div class="page__text">
-          <h3>App launch</h3>
+          <h2 class="h3">App launch</h2>
           <p>For a SaaS product, a tool or an app with a free trial.</p>
           <ul><li>Product panel and a 30-day chart, built in HTML</li><li>Pricing table with a monthly and yearly switch</li><li>Install snippet with a copy button</li></ul>
           <a href="launch/">Open the demo</a>
@@ -120,7 +122,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
       <li class="page">
         <a class="shot" href="cafe/" aria-label="Open the café demo"><img src="shots/cafe.jpg" width="1440" height="900" alt="The café template: the name and hours set in tall wood type like a printed bill" loading="lazy"></a>
         <div class="page__text">
-          <h3>Café and restaurant</h3>
+          <h2 class="h3">Café and restaurant</h2>
           <p>For a café, a canteen, a bakery or a small restaurant.</p>
           <ul><li>Menu switcher that opens on the right meal for the hour</li><li>Hours bill, today’s hours fixed to the screen</li><li>Next supper nights from the calendar, with a table form</li></ul>
           <a href="cafe/">Open the demo</a>
@@ -155,7 +157,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--color-focus); o
 </footer>
 <script>
 /* Put your Gumroad product link here */
-const BUY_URL = '';
+const BUY_URL = 'https://marcelhex.gumroad.com/l/landing-pack-1';
 if (BUY_URL) document.querySelectorAll('[data-buy]').forEach((a) => { a.href = BUY_URL; });
 </script>
 </body>
